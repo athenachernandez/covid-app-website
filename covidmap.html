@@ -11,53 +11,60 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <style>
-.empty-row {
-	padding-top: 0.5in;
-}
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
+	.empty-row {
+		padding-top: 0.5in;
+	}
+
+	.carousel-inner img {
+		width: 100%;
+		height: 100%;
+	}
 </style>
+
+<!-- <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a>
+  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a>
+  <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a>
+  <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a>
+	 -->
 
 <body>
 	<div class="header">
 		<h1 id="home">COVID-19 Map</h1>
 	</div>
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="#home">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#map">Map</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#graph">Graph</a>
-      </li>
-			<li class="nav-item">
-        <a class="nav-link" href="#news">News</a>
-      </li>
-			<li class="nav-item">
-        <a class="nav-link" href="#timeline">Timeline</a>
-      </li>
-			<li class="nav-item">
-        <a class="nav-link" href="#testing-sites">Testing Sites</a>
-      </li>
-			<li class="nav-item">
-        <a class="nav-link" href="#supplies">Supplies</a>
-      </li>
-			<li class="nav-item">
-        <a class="nav-link" href="#about-us">About Us</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<br>
+		<a class="navbar-brand" href="#home">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#map">Map</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#graph">Graph</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#news">News</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#timeline">Timeline</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#testing-sites">Testing Sites</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#supplies">Supplies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about-us">About Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<br>
 
-<!--
+	<!--
 	<div id="navbar">
 		<a class="active" href="#home">Home</a>
 		<a href="#map">Map</a>
@@ -72,59 +79,264 @@
 	<div class="content">
 		<!-- for each: include a screenshot(s), author, description, and how you made it-->
 		<h2 id="map">Map</h2> <!-- add code tag? -->
-		<p>Athena's "heat" map feature displays four major COVID-19 statistics by calculating
-			the radii for each circle of each state: positive increase,
-			death increase, currently hospitalized, and total recovered.
+		<p class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="by Athena Hernández">
+			The concentration map feature displays four major COVID-19 statistics — positive increase,
+			death increase, currently hospitalized, and total recovered — by calculating
+			the radii for the circle of each state. These statistics were gathered from the API at <code>api.covidtracking.com</code>.
 		</p>
 		<div id="demo" class="carousel slide" data-ride="carousel">
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
 
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="nature1.jpg" alt="IMAGE OF MAP" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="nature2.jpg" alt="IMAGE OF MAP" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="nature3.jpg" alt="IMAGE OF MAP" width="1100" height="500">
-    </div>
-  </div>
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="nature1.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Nature pix bc we still hv yet to finalize our app :)</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature2.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Carousels r dope</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature3.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Last pic :(</p>
+					</div>
+				</div>
+			</div>
 
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
 		<h2 id="graph">Graph</h2>
-		<p>Kayla's graph features works in unison with the map by displaying both
+		<p class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="by Kayla Brewer">The graph features works in unison with the map by displaying both
 			a bar and pie graphs. The bar graph contains a vertical bar for each state
 			while the pie graph displays the top five states.</p>
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="nature1.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Nature pix bc we still hv yet to finalize our app :)</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature2.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Carousels r dope</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature3.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Last pic :(</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
 		<h2 id="news">News</h2>
-		<p>Daxton's news feature retrieves current news concerning updates on the coronavirus
+		<p class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="by Daxton Gutekunst">The news feature retrieves current news concerning updates on the coronavirus
 			by using Google's News API. Then, it displays the title of the article, the
 			author, a small description, date, and time it was published. When clicked,
 			you will be brought to the webpage of the article.</p>
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="nature1.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Nature pix bc we still hv yet to finalize our app :)</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature2.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Carousels r dope</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature3.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Last pic :(</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
 		<h2 id="timeline">Timeline</h2>
-		<p>Dhruv's timeline feature works along with the map and graph features.
+		<p class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="by Dhruv">The timeline feature works along with the map and graph features.
 			There is a slide bar that represents a timeline and whereever you move the
 			selector, the date is appropriately changed along with its data that is
 			displayed in the map and graphs.</p>
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="nature1.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Nature pix bc we still hv yet to finalize our app :)</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature2.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Carousels r dope</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature3.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Last pic :(</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
 		<h2 id="testing-sites">Testing Sites</h2>
-		<p>TBD</p>
+		<p class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="by he who must not be named">TBD</p>
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="nature1.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Nature pix bc we still hv yet to finalize our app :)</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature2.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Carousels r dope</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature3.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Last pic :(</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
 		<h2 id="supplies">Supplies</h2>
-		<p>Alvin added links to Amazon that provide protection from COVID-19. These include
+		<p class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="by Alvin Wang">There are links to Amazon that provide protection from COVID-19. These include
 			masks and any other supply you would like to search for.</p>
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="nature1.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Nature pix bc we still hv yet to finalize our app :)</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature2.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Carousels r dope</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="nature3.jpg" alt="IMAGE OF MAP" width="1100" height="500">
+					<div class="carousel-caption">
+						<p>Last pic :(</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
 		<h2 id="about-us">About Us</h2>
 		<div class="container">
 			<div class="row">
@@ -136,14 +348,14 @@
 							I like to read and browse YouTube.
 						</div>
 						<div class="col-6">
-							<img src="alvin-wang.jpg" />
+							<img src="athena-hernandez.jpg" />
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="row">
 						<div class="col-6">
-							<b>Daxton Gutekunst</b> — [Daxton's bio]
+							<b>Daxton Gutekunst</b> — A sophomore at Bishop's who likes to tutor, play ping pong, and program.
 						</div>
 						<div class="col-6">
 							<img src="alvin-wang.jpg" />
@@ -158,7 +370,7 @@
 				<div class="col-lg-6">
 					<div class="row">
 						<div class="col-6">
-							<img src="alvin-wang.jpg" />
+							<img src="kayla-brewer.jpg" />
 						</div>
 						<div class="col-6">
 							<b>Kayla Brewer</b> — A junior at CCA who likes playing video games and programming in Java.
@@ -186,7 +398,7 @@
 							<img src="alvin-wang.jpg" />
 						</div>
 						<div class="col-6">
-							<b>Alvin Wang</b> —  A freshman at CCA who likes gaming, watching anime, and programming.
+							<b>Alvin Wang</b> — A freshman at CCA who likes gaming, watching anime, and programming.
 						</div>
 					</div>
 				</div>
@@ -194,6 +406,11 @@
 		</div>
 
 		<script>
+			$(document).ready(function() {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
+		<!-- <script>
 			window.onscroll = function() {
 				myFunction()
 			};
@@ -208,7 +425,7 @@
 					navbar.classList.remove("sticky");
 				}
 			}
-		</script>
+		</script> -->
 
 </body>
 
